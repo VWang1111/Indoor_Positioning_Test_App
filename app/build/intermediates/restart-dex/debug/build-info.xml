@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86"
+    api-level="23"
+    density="560dpi"
+    format="7"
+    timestamp="424770042481540"
+    token="-2517002408428498016" >
+
+    <task
+        name="javac"
+        duration="8823" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="419" />
+    <task
+        name="verifier"
+        duration="94" />
+
+    <artifact
+        location="C:\Users\vwang\Downloads\my-first-indoors-android-app\app\build\outputs\apk\app-debug.apk"
+        type="MAIN" />
+
+    <build timestamp="424770042481540" >
+        <artifact
+            location="C:\Users\vwang\Downloads\my-first-indoors-android-app\app\build\outputs\apk\app-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>

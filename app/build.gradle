@@ -1,0 +1,31 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 17
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "com.mycompany.myfirstindoorsapp"
+        minSdkVersion 11
+        targetSdkVersion 18
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDir 'libs'
+
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile files('libs/android-support-v4-r13.jar')
+    compile files('libs/indoors-library-surface.jar')
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+}

@@ -1,0 +1,11 @@
+CHANGED,C:\Users\vwang\Downloads\my-first-indoors-android-app\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\mycompany\myfirstindoorsapp\R$layout$override.class
+CHANGED,C:\Users\vwang\Downloads\my-first-indoors-android-app\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\mycompany\myfirstindoorsapp\R$dimen$override.class
+CHANGED,C:\Users\vwang\Downloads\my-first-indoors-android-app\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\mycompany\myfirstindoorsapp\R$override.class
+CHANGED,C:\Users\vwang\Downloads\my-first-indoors-android-app\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\mycompany\myfirstindoorsapp\R$attr$override.class
+CHANGED,C:\Users\vwang\Downloads\my-first-indoors-android-app\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\mycompany\myfirstindoorsapp\R$id$override.class
+CHANGED,C:\Users\vwang\Downloads\my-first-indoors-android-app\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\mycompany\myfirstindoorsapp\R$drawable$override.class
+CHANGED,C:\Users\vwang\Downloads\my-first-indoors-android-app\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\mycompany\myfirstindoorsapp\R$string$override.class
+CHANGED,C:\Users\vwang\Downloads\my-first-indoors-android-app\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\mycompany\myfirstindoorsapp\MainActivity$override.class
+CHANGED,C:\Users\vwang\Downloads\my-first-indoors-android-app\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\mycompany\myfirstindoorsapp\R$style$override.class
+CHANGED,C:\Users\vwang\Downloads\my-first-indoors-android-app\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\mycompany\myfirstindoorsapp\R$menu$override.class
+CHANGED,C:\Users\vwang\Downloads\my-first-indoors-android-app\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class

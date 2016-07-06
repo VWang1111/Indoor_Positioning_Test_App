@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\vwang\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="C:\Users\vwang\Downloads\my-first-indoors-android-app\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-22.2.0_4a0bc588f23b5cca8e48f4778130038b99456845\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\vwang\Downloads\my-first-indoors-android-app\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="a1e5deab9d7c0d7edbdcb4a2e585c36eb103fdc8">
+        <dex dex="C:\Users\vwang\Downloads\my-first-indoors-android-app\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_ff6abc146408e1869b19e84724095ff0bace711c\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\vwang\Downloads\my-first-indoors-android-app\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
+        <dex dex="C:\Users\vwang\Downloads\my-first-indoors-android-app\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-8.1.0_e5d4506e56878d7c19a2bc1ed0a0465945379f8f\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\vwang\Downloads\my-first-indoors-android-app\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.1.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="4477ea44f5ec5ad064022a22691732d7638ff197">
+        <dex dex="C:\Users\vwang\Downloads\my-first-indoors-android-app\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appindexing-8.1.0_7b51edc0bbb8cc2ca19d98f1e4dd5ece24f4a044\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\vwang\Downloads\my-first-indoors-android-app\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\libs\internal_impl-22.2.0.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="C:\Users\vwang\Downloads\my-first-indoors-android-app\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-22.2.0_652245b68b516cfd3750b0b1a48c6d69cbeef1e2\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\vwang\Downloads\my-first-indoors-android-app\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="C:\Users\vwang\Downloads\my-first-indoors-android-app\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-22.2.0_2db341ad0111afee825616f167b02ee170569cb8\classes.dex" />
+    </item>
+
+</items>
