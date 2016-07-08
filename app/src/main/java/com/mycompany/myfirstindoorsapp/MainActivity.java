@@ -1,14 +1,22 @@
 package com.mycompany.myfirstindoorsapp;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.List;
 
+import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.customlbs.coordinates.GeoCoordinate;
@@ -34,7 +42,9 @@ import com.google.android.gms.common.api.GoogleApiClient;
 public class MainActivity extends FragmentActivity implements IndoorsLocationListener {
 
     private IndoorsSurfaceFragment indoorsFragment;
-    private boolean eval = true;
+    private String result = "";
+    private int positionNum = 0;
+
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -47,14 +57,6 @@ public class MainActivity extends FragmentActivity implements IndoorsLocationLis
         IndoorsFactory.Builder indoorsBuilder = new IndoorsFactory.Builder();
         IndoorsSurfaceFactory.Builder surfaceBuilder = new IndoorsSurfaceFactory.Builder();
         indoorsBuilder.setContext(this);
-
-        if (!eval) {
-            eval = true;
-            indoorsBuilder.setEvaluationMode(true);
-        } else {
-            eval = false;
-            indoorsBuilder.setEvaluationMode(false);
-        }
 
         // TODO: replace this with your API-key
         indoorsBuilder.setApiKey("6ae0a01d-5902-4d6e-bf92-97da09dbbd8a");
@@ -82,21 +84,36 @@ public class MainActivity extends FragmentActivity implements IndoorsLocationLis
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.background:
-                Toast.makeText(this, "This is an app made by Victor", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, result, Toast.LENGTH_LONG).show();
+
+                Intent sendIntent = new Intent(Intent.ACTION_SEND);
+                sendIntent.setData(Uri.parse("mailto:"));
+                sendIntent.putExtra(Intent.EXTRA_SUBJECT, "Location Data");
+                sendIntent.putExtra(Intent.EXTRA_EMAIL, "vwang1111@gmail.com");
+                sendIntent.putExtra(Intent.EXTRA_TEXT, result);
+                sendIntent.setType("text/html");
+                startActivity(sendIntent);
+                result = "";
+
                 return true;
+
             case R.id.toast:
-                GeoCoordinate geoCoordinate = indoorsFragment.getCurrentUserGpsPosition();
+                Coordinate geoCoordinate = indoorsFragment.getCurrentUserPosition();
                 if (geoCoordinate != null) {
                     Toast.makeText(
                             this,
-                            "User is located at " + geoCoordinate.getLatitude() + ","
-                                    + geoCoordinate.getLongitude(), Toast.LENGTH_SHORT).show();
+                            "Position " + (++positionNum) + " recorded at: " + geoCoordinate.x + ","
+                                    + geoCoordinate.y, Toast.LENGTH_SHORT).show();
+
+                    //write a string with the data
+                    result += geoCoordinate.x;
+                    result += ",";
+                    result += geoCoordinate.y;
+                    result += ",";
                 } else {
                     Toast.makeText(this, "No user location detected", Toast.LENGTH_SHORT).show();
                 }
-                return true;
-            case R.id.eval:
-
+                
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
@@ -104,6 +121,7 @@ public class MainActivity extends FragmentActivity implements IndoorsLocationLis
     }
 
     public void positionUpdated(Coordinate userPosition, int accuracy) {
+        /*
         GeoCoordinate geoCoordinate = indoorsFragment.getCurrentUserGpsPosition();
 
         if (geoCoordinate != null) {
@@ -112,6 +130,8 @@ public class MainActivity extends FragmentActivity implements IndoorsLocationLis
                     "User is located at " + geoCoordinate.getLatitude() + ","
                             + geoCoordinate.getLongitude(), Toast.LENGTH_SHORT).show();
         }
+        */
+        //((TextView)findViewById(R.id.currPos)).setText(userPosition.x + "," + userPosition.y);
     }
 
     @Override
@@ -149,9 +169,11 @@ public class MainActivity extends FragmentActivity implements IndoorsLocationLis
 
     public void enteredZones(List<Zone> zones) {
         // user entered one or more zones
+        /*
         Toast.makeText(
                 this,
                 "User entered " + zones.get(0).getName(), Toast.LENGTH_SHORT).show();
+                */
     }
 
     @Override
